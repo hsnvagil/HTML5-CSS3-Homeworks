@@ -1,0 +1,30 @@
+.main {
+    margin: 25px;
+}
+
+.outer {
+    width: 500px;
+    height: 100px;
+    white-space: nowrap;
+}
+
+p {
+    font-size: 40px;
+}
+
+.outer div {
+    width: auto;
+    background-color: rgb(233, 230, 230);
+    height: 60px;
+    margin: 0 2px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a {
+    font-size: 20px;
+    text-align: center;
+}
