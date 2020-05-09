@@ -1,0 +1,33 @@
+.main {
+    margin-left: -15px;
+}
+
+li {
+    list-style: none;
+    height: 30px;
+}
+
+img {
+    margin-left: 15px;
+    vertical-align: middle;
+    margin-top: 4px;
+}
+
+.cross {
+    display: inline-block;
+    margin-top: 4px;
+    margin-left: 40px;
+    vertical-align: middle;
+    font-size: 10px;
+}
+
+h2 {
+    margin-left: 25px;
+}
+
+.text {
+    display: inline-block;
+    margin-top: 4px;
+    margin-left: 25px;
+    vertical-align: middle;
+}
