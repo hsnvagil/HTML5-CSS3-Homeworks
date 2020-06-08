@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Inputs</h1>
+    <div class="input-section">
+        <input type="text" placeholder="Enter some text">
+        <div id="valid-text">
+            <a>valid text</a>
+            <img src="img/valid.png">
+        </div>
+        <div id="invalid-text">
+            <a>invalid text</a>
+            <img src="img/invalid.png">
+        </div>
+    </div>
+    <section>
+        <h1>Check boxes</h1>
+        <div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <label class="switch">
+                <input checked type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </section>
+    <section>
+        <h1>Radio buttons</h1>
+        <div>
+            <a>Gender:</a>
+            <label class="radio-button-section">Male
+                <input checked type="radio" name="gender" >
+                <div><span class="checkmark"></span></div>
+            </label>
+            <label class="radio-button-section">Female
+                <input type="radio" name="gender">
+                <div><span class="checkmark"></span></div>
+            </label>
+        </div>
+    </section>
+    <section class="buttons">
+        <h1>Buttons</h1>
+        <button id="active">Active</button>
+        <button id="hover-1">Hover</button>
+        <button id="danger">Danger</button>
+        <button id="hover-2">Hover</button>
+        <button id="disabled">Disabled</button>
+        <button id="round-button-plus">+</button>
+        <button id="round-button-minus">-</button>
+    </section>
+    <section>
+        <h1>Text area</h1>
+        <textarea rows="4" cols="50"  placeholder="Enter some text..." ></textarea>
+    </section>
+</div>
+</body>
+</html>

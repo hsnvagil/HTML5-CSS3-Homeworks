@@ -1,0 +1,247 @@
+.container {
+    margin: 0 auto;
+    width: 700px;
+    /*height: 380px;*/
+    background-color: #F5F5F5;
+    padding: 25px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input-section input {
+    height: 35px;
+    padding-left: 20px;
+    outline: none;
+    width: 200px;
+}
+
+#valid-text {
+    border: 1px solid #41AD49;
+}
+
+#valid-text a {
+    color: #41AD49;
+}
+
+#invalid-text {
+    border: 1px solid #E44061;
+}
+
+#invalid-text a {
+    color: #E44061;
+}
+
+#valid-text img, #invalid-text img {
+    max-width: 20px;
+    max-height: 20px;
+    padding-right: 5px;
+    margin-left: auto;
+}
+
+#valid-text, #invalid-text {
+    width: 200px;
+    padding-left: 20px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section div {
+    display: flex;
+    flex-direction: row;
+}
+
+section div a {
+    font-size: 13px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 30px;
+    margin-right: 80px;
+}
+
+.switch:before {
+    margin-left: 64px;
+    line-height: 30px;
+    font-size: 16px;
+    padding-left: 3px;
+    content: "Subscribe";
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #41AD49;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 28px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #41AD49;
+    border-radius: 5px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    border: 1px solid #E44061;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: #E44061;
+}
+
+.radio-button-section {
+    position: relative;
+    padding-left: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio-button-section div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    height: 10px;
+    width: 10px;
+    background-color: #eee;
+}
+
+.radio-button-section input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkmark {
+    height: 100%;
+    width: 100%;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.radio-button-section:hover input ~ div .checkmark {
+    background-color: #ccc;
+}
+
+.radio-button-section input:checked ~ div .checkmark {
+    background-color: #41AD49;
+}
+
+.buttons button {
+    font-size: 15px;
+    font-weight: 600;
+    width: 100px;
+    height: 40px;
+    margin-right: 5px;
+    border: 0;
+    outline: 0;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons #active {
+    background-color: #41AD49;
+}
+
+.buttons #active:hover {
+    background-color: #49b654;
+}
+
+.buttons #hover-1 {
+    background-color: #2C7731;
+}
+
+.buttons #hover-1:hover {
+    background-color: #338d3a;
+}
+
+.buttons #hover-2 {
+    background-color: #97293F;
+}
+
+.buttons #hover-2:hover {
+    background-color: #b32f49;
+}
+
+.buttons #danger {
+    background-color: #E44061;
+}
+
+.buttons #danger:hover {
+    background-color: #fa486b;
+}
+
+.buttons #disabled {
+    background-color: #808080;
+}
+
+.buttons #disabled:hover {
+    background-color: #979595;
+}
+
+.buttons #round-button-plus {
+    background-color: #41AD49;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.buttons #round-button-plus:hover {
+    background-color: #49b654;
+}
+
+.buttons #round-button-minus {
+    background-color: #E44061;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.buttons #round-button-minus:hover {
+    background-color: #fa486b;
+}
+
+textarea {
+    height: 140px;
+    width: 450px;
+    font-size: 16px;
+    padding: 15px;
+    font-family: sans-serif;
+}

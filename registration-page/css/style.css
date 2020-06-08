@@ -1,0 +1,159 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    margin: 0 auto;
+    width: 1240px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form, #password-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.f-heading {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.registration-form > div {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.registration-form > div > img {
+    border-radius: 18px;
+    width: 30px;
+    height: 30px;
+}
+
+.registration-form > div > input {
+    margin-left: 15px;
+    display: inline-block;
+    width: 500px;
+}
+
+.registration-form > div > input, .personal-data-form > div > input , #password-section input, select {
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: black;
+    padding: 7px 15px;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+
+#password-section input {
+    display: inline-block;
+    width: 228px;
+    margin-left: 15px;
+}
+
+
+.personal-data-form > div {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.personal-data-form {
+    margin-left: 40px;
+}
+
+.personal-data-form > div > input {
+    margin-right: 15px;
+    display: inline-block;
+    width: 250px;
+}
+
+.select {
+    margin-right: 15px;
+    display: block;
+    width: 280px;
+}
+
+.check-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.check-box div {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.hr {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-bottom: 2px solid gray;
+}
+
+button {
+    margin: 30px;
+    height: 35px;
+    width: 150px;
+    background-color: #008B8B;
+    outline: none;
+    border: none;
+    color: white;
+    box-shadow: 1px 2px grey;
+    align-self: flex-end;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    #container {
+        width: 600px !important;
+    }
+
+    .form {
+        flex-direction: column !important;
+    }
+
+    .personal-data-form {
+        margin-left: 0 !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #container {
+        width: 450px !important;
+    }
+
+    .form, .personal-data-form > div, #password-section {
+        flex-direction: column !important;
+    }
+
+    .personal-data-form {
+        margin-left: 0 !important;
+    }
+
+    .personal-data-form > div input, input[type="text"], .registration-form > div input, .personal-data-form > div select {
+        margin-bottom: 20px !important;
+    }
+
+    .personal-data-form > div input {
+        width: 425px !important;
+    }
+
+    #password-section input {
+        width: 375px !important;
+    }
+
+    input[type="text"] {
+        width: 400px !important;
+    }
+
+    .personal-data-form > div select {
+        width: 457px !important;
+    }
+}

@@ -1,0 +1,98 @@
+.container {
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    background-color: #9FCDCD;
+    position: relative;
+    border-radius: 5%;
+}
+
+.container .img-box {
+    position: absolute;
+    left: 69%;
+    top: 54%;
+    width: 248px;
+    height: 276px;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.container .img-box img {
+    width: 350px;
+    overflow: hidden;
+}
+
+.container .heading {
+    background-color: #DB6423;
+    width: 600px;
+    height: 60px;
+    position: absolute;
+    top: 8%;
+    right: 30%;
+}
+
+.container .heading a {
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    line-height: 60px;
+    margin-left: 85px;
+}
+
+.form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 25%;
+    margin-left: 40px;
+}
+
+.form .th {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form .th input[type="text"] {
+    width: 100px;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form div a {
+    color: #466C6F;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    background-color: #A9D2D2;
+    height: 45px;
+    border: 0;
+    border-bottom: 1px solid #466C6F;
+    padding-left: 15px;
+    font-size: 17px;
+    color: #466C6F;
+    outline: 0;
+}
+
+.form > div > input[type="text"] {
+    width: 400px;
+}
+
+::placeholder {
+    color: #466C6F;
+    opacity: 0.7;
+}
+
+:-ms-input-placeholder {
+    color: #466C6F;
+}
+
+::-ms-input-placeholder {
+    color: #466C6F;
+}
